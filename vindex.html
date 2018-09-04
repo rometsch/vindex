@@ -27,8 +27,19 @@ body {
   <button id="awakeButton" onclick="registerState('awake')">Awake</button>
   <button id="stopButton" onclick="registerState('stop')">Stop</button>
   </div>
-
   </br>
+  <table>
+	<tr>
+		<td>Filename to Save As:</td>
+		<td><input id="logFileName"></input></td>
+		<td><button onclick="saveTextAsFile()">Save Text to File</button></td>
+	</tr>
+	<tr>
+		<td>Select a File to Load:</td>
+		<td><input type="file" id="fileToLoad">
+		<td><button onclick="loadFileAsText()">Load Selected File</button><td>
+	</tr>
+</table>
   
   <textarea id="log" rows="20" cols="60">
   </textarea>
